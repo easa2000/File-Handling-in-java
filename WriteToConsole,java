@@ -1,0 +1,11 @@
+import java.io.IOException;
+public class WriteToConsole {
+    public static void main(String[] args) {
+        try{
+            byte consoleOut[] = new byte[] {'J','a','v','a'};
+            System.out.write(consoleOut);
+        }catch (IOException e) {
+            System.out.println("Caught IOException: " + e);
+        }
+    }
+}
